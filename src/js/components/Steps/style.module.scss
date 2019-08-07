@@ -1,0 +1,43 @@
+.steps {
+  width: 520px;
+  height: 100%;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: $gray-light;
+    position: relative;
+    color: $gray;
+    &--active {
+      background-color: $color-primary;
+      color: #fff;
+    }
+    &:after {
+      position: absolute;
+      top: calc(100% + 7px);
+      left: 50%;
+      transform: translateX(-50%);
+      content: attr(data-title);
+      font-size: $font-size-md;
+      color: $gray-black;
+      white-space: nowrap;
+    }
+  }
+  &__progress-bar {
+    width: 100%;
+    flex: 1 1 100%;
+    background-color: $gray-light;
+    height: 12px;
+    &--active {
+      background-color: $color-primary;
+    }
+  }
+}
