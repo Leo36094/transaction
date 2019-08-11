@@ -1,0 +1,45 @@
+$types: (
+  default: (
+    filled-color: $color-primary,
+    text-color: #fff,
+  ),
+  dark: (
+    filled-color: #000,
+    text-color: #fff,
+  ),
+);
+$sizes: (
+  xs: (
+    padding: 8px 12px,
+    height: 40px,
+    width: 140px,
+    font-size: $font-size-xs,
+    radius: 50px
+  ),
+  md: (
+    padding: 8px 12px,
+    height: 40px,
+    width: 140px,
+    font-size: $font-size-md,
+    radius: 50px
+  )
+);
+
+.button {
+  @each $type, $styles in $types {
+    &:not(:disabled)[data-type='#{$type}'] {
+      color: map-get($styles, text-color);
+      background-color: map-get($styles, filled-color);
+    }
+  }
+
+  @each $size, $styles in $sizes {
+    &[data-size="#{$size}"] {
+      padding: map-get($styles, padding);
+      height: map-get($styles, height);
+      width: map-get($styles, width);
+      font-size: map-get($styles, font-size);
+      border-radius: map-get($styles , radius);
+    }
+  }
+}

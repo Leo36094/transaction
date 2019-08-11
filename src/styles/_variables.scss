@@ -8,7 +8,7 @@ $color-primary-light                  : #FCFCFC;
 $color-primary                        : #FFBC00;
 
 
-
+$color-error                          : #ff0000;
 $color-danger                         : rgb(213, 049, 049); // #d53131: reddish
 $color-warn                           : rgb(239, 132, 060); // #ef843c: dusty-orange
 
@@ -18,7 +18,7 @@ $gray-darkest                         : rgb(097, 103, 111); // #61676f: slate-gr
 $gray-darker                          : rgb(112, 112, 112); // #818891: steel
 $gray-dark                            : rgb(174, 174, 174); // #aeaeae: light-grey
 $gray                                 : rgb(209, 209, 209); // #D1D1D1:
-$gray-light                           : rgb(239, 239, 239); // #EFEFEF: light-gray
+$gray-light                           : rgb(235, 235, 235); // #EFEFEF: light-gray
 $gray-lighter                         : rgb(243, 245, 246); // #f3f5f6: ice-gray
 $gray-lightest                        : rgb(241, 243, 249); // #f1f3f9: light-pale-grey
 $gray-white                           : rgb(255, 255, 255); // #ffffff
@@ -40,8 +40,8 @@ $transition-mode                      : cubic-bezier( .25, .8, .25, 1);
 
 $font-family                          : "Roboto","Lato", "-apple-system", "PingFang-TC", "Segoe UI", "Microsoft JhengHei", "Oxygen", "Fira Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
 $font-logo                            : "Modern No. 20";
-$font-size-xl                         : 36px;
-$font-size-lg                         : 20px;
+$font-size-xl                         : 24px;
+$font-size-lg                         : 18px;
 $font-size-md                         : 16px;
 $font-size-sm                         : 14px;
 $font-size-xs                         : 12px;

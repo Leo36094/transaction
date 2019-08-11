@@ -1,11 +1,90 @@
 .App {
   box-sizing: border-box;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background: $background-color-primary;
-}
-.header {
-  display: flex;
-  justify-content: center;
-  padding: 76px 0 42px 0;
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+    padding: 76px 0 42px 0;
+  }
+  .content {
+    display: flex;
+    justify-items: center;
+    &--4 {
+      position: fixed;
+      z-index: 2;
+      @include above-laptop {
+        z-index: 1;
+        position: initial;
+        flex: 0 0 calc(100% * 0.3);
+        max-width: calc(100% * 0.3);
+      }
+    }
+    &--6 {
+      flex: 0 0 calc(100% * 0.66);
+      max-width: calc(100% * 0.66);
+      margin: 0 auto;
+      z-index: 1;
+      @include above-laptop {
+        flex: 0 0 calc(100% * 0.7);
+        max-width: calc(100% * 0.7);
+      }
+    }
+    .product {
+      font-size: $font-size-sm;
+      position: fixed;
+      top: 0;
+      left: -530px;
+      transition: all 0.5s ease-in-out;
+      &--active {
+        transition: all 0.5s ease-in-out;
+        left: 0;
+      }
+      @include above-laptop {
+        position: relative;
+        left: 0%;
+        z-index: 1;
+      }
+      &-zone {
+        background-color: $gray-light;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        border-radius: 11px;
+        padding: 15px 45px;
+        @include above-laptop {
+          margin-top: 60px;
+          padding: 45px 65px;
+        }
+      }
+      &-title {
+        padding: 10px 0;
+      }
+      &-content {
+        margin-bottom: 20px;
+      }
+      &-info-button {
+        position: absolute;
+        background-color: #fff;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.08);
+        border-radius: 0 5px 5px 0;
+        writing-mode: vertical-lr;
+        line-height: 1;
+        letter-spacing: 1.5px;
+        cursor: pointer;
+        right: -40px;
+        top: 0;
+        padding: 35px 12px;
+        @include above-laptop {
+          right: initial;
+          top: 6.5%;
+          left: 0;
+        }
+      }
+    }
+  }
 }

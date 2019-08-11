@@ -1,0 +1,24 @@
+.form-container {
+  background-color: #fff;
+}
+.special-section {
+  display: flex;
+  flex: 0 0 calc(50% - 5px);
+  align-items: center;
+  &:last-child {
+    margin-left: 5px;
+  }
+}
+.info-form {
+  &__checkbox{
+    font-size: $font-size-sm;
+    &--primary {
+      color: $color-primary
+    }
+  }
+  &__footer {
+    justify-content: flex-end;
+    display: flex;
+    width: calc(100% - 30px);
+  }
+}

@@ -1,0 +1,17 @@
+.input {
+  padding: 10px 15px;
+  background-color: $gray-light;
+  font-size: $font-size-md;
+  border: 1px solid $gray-light;
+  border-radius: 5px;
+  width: 100%;
+  &[data-is-error="true"] {
+    &.input {
+      border: 1px solid $color-error;
+    }
+  }
+  &:focus, &:hover {
+    transition: border .2s ease-in-out;
+    border: 1px solid $color-primary;
+  }
+}

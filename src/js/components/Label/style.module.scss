@@ -1,0 +1,16 @@
+.label {
+  display: inline-block;
+  margin-bottom: 5px;
+  position: relative;
+  &[data-is-required="true"] {
+    &.label:after {
+      content: '*';
+      color: red;
+      position: absolute;
+      height: 100%;
+      top: 50%;
+      right: -8px;
+      transform: translateY(-50%);
+    }
+  }
+}
