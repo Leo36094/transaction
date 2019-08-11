@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/transaction-procedure/static/css/main.5436f773.chunk.css",
+    "main.js": "/transaction-procedure/static/js/main.f4bfb230.chunk.js",
+    "main.js.map": "/transaction-procedure/static/js/main.f4bfb230.chunk.js.map",
+    "runtime~main.js": "/transaction-procedure/static/js/runtime~main.c3c3c178.js",
+    "runtime~main.js.map": "/transaction-procedure/static/js/runtime~main.c3c3c178.js.map",
+    "static/js/2.c37676ba.chunk.js": "/transaction-procedure/static/js/2.c37676ba.chunk.js",
+    "static/js/2.c37676ba.chunk.js.map": "/transaction-procedure/static/js/2.c37676ba.chunk.js.map",
+    "index.html": "/transaction-procedure/index.html",
+    "precache-manifest.9e8c95457ac407a98c8c79befe1b818e.js": "/transaction-procedure/precache-manifest.9e8c95457ac407a98c8c79befe1b818e.js",
+    "service-worker.js": "/transaction-procedure/service-worker.js",
+    "static/css/main.5436f773.chunk.css.map": "/transaction-procedure/static/css/main.5436f773.chunk.css.map",
+    "static/media/product@2x.png": "/transaction-procedure/static/media/product@2x.ca068ac6.png"
+  }
+}
